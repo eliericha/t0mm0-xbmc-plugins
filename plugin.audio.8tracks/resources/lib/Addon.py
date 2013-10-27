@@ -34,7 +34,7 @@ def log(msg, err=False):
         xbmc.log(addon.getAddonInfo('name') + ': ' + 
                  msg.encode('ascii','ignore'), xbmc.LOGERROR)    
     else:
-        xbmc.output(addon.getAddonInfo('name') + ': ' + 
+        xbmc.log(addon.getAddonInfo('name') + ': ' +
                     msg.encode('ascii','ignore'), xbmc.LOGDEBUG)    
 
 def show_error(details):
